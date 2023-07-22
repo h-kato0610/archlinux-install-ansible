@@ -1,0 +1,6 @@
+---
+
+- name: Install Arch linux
+  hosts: hosts
+  connection: local
+  become: true
