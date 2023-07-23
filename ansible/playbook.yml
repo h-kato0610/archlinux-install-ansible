@@ -4,3 +4,7 @@
   hosts: hosts
   connection: local
   become: true
+
+  roles:
+    - { role: browser, tags: ['browsers'] }
+    - { role: editor, tags: ['editors'] }
