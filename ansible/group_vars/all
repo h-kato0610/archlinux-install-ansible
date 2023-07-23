@@ -50,9 +50,14 @@ base_packages:
   - curl
   - git
   - openssh
+  - zsh
+
+#####
+# Editors
+#####
+editors:
   - vim
   - code
-  - zsh
 
 #####
 # File system packages
