@@ -1,0 +1,81 @@
+#####
+# User config 
+#####
+user:
+  name: hiro
+  group: users
+  shell: /bin/zsh
+
+#####
+# System config
+#===============
+# locale select:
+#   Option: en_US.UTF-8
+#   Option: js_JP.UTF-8
+# processor:
+#   Option: intel
+#   Option: amd
+# graphics_card:
+#   Option: intel
+#   Option: amd
+#   Option: nvidia
+#####
+system:
+  locale: en_US.UTF-8
+  timezone: Asia/Tokyo
+  processor: amd
+  graphics_card: amd
+  macspoof: disabled
+
+#####
+# Bootloader config
+#===============
+# syslinux and grub support
+#####
+# bootloader: syslinux
+bootloader: grub
+
+#####
+# SSH config
+#####
+ssh :
+  port: 22
+  enabled_sshd: true
+
+#####
+# Base packages
+#####
+base_packages:
+  - base-devel
+  - curl
+  - git
+  - openssh
+  - vim
+  - zsh
+
+#####
+# File system packages
+#####
+filesystem_packages:
+  - dosfstools
+  - ntfs-3g
+  - exfat-utils
+  - gparted
+
+#####
+# Desktops
+#===============
+#   Option: Xfce4
+#   Option: KDE5 Plasma
+####
+desktop:
+  # - xfce4
+  # - xfce4-goodies
+  # - xfwm4-themes
+  - kde-applications
+
+#####
+# IME
+#####
+ime:
+  - fcitx5-mozc
