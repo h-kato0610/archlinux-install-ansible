@@ -81,6 +81,13 @@ desktop:
   - kde-applications
 
 #####
+# Browser
+#####
+browser:
+  - firefox
+  - chromium
+
+#####
 # IME
 #####
 ime:
